@@ -17,7 +17,7 @@ severity=ERROR
 ```
 ```bash
 resource.type="k8s_node"
-resource.labels.project_id="owletcare-prod"
+resource.labels.project_id="prod-eu-project"
 jsonPayload.reason="OOMKilling"
 ```
 ## [K8S](https://cloud.google.com/kubernetes-engine/docs/troubleshooting?_ga=2.167489592.-729104355.1657257577&_gac=1.126037375.1686680329.CjwKCAjwp6CkBhB_EiwAlQVyxfb_MroVHHAGumKP9r-vcl__jILiBKGHrjxNDJjt16rNZ04Gpa75-RoC58EQAvD_BwE#workload_issues)

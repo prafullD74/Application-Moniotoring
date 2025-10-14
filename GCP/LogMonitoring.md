@@ -53,3 +53,7 @@ kubectl get pod rate-limit-d58bcff68-ss8bk -o jsonpath='{.spec.containers[*].nam
 ```bash
 kubectl config set-context --current --namespace gloo-system
 ```
+## PromQL Query
+```bash
+sum(avg_over_time(kubernetes_io:container_memory_limit_bytes{monitored_resource="k8s_container",location="us-central1",cluster_name="platform",namespace_name="platform",metadata_system_top_level_controller_type="Deployment",metadata_system_top_level_controller_name="trigger-wrapper-v1"}[${__interval}]))
+```
